@@ -12,7 +12,7 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 public class TextFieldMixin {
     
     @Inject(method = "charTyped(CI)Z", at = @At(value = "INVOKE", target = "java/lang/Character.toString (C)Ljava/lang/String"))
-    public void onKeyPressed(char chr, int modifiers, CallbackInfoReturnable ci) {
+    public void onKeyPressed(char chr, int modifiers, CallbackInfoReturnable<Void> ci) {
         TextFieldWidgetCallback.EVENT.invoker().keyPressed(chr, modifiers);
     }
 }

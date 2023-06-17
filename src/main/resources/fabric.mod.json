@@ -1,26 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "myfirstmod",
+	"id": "parentheorem",
 	"version": "0.0.1",
-	"name": "Example mod",
+	"name": "ParenTheorem",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"MystWraith"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MystWraith/ParenTheorem"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.mystwraith.myfirstmod.MyFirstMod"
+			"io.mystwraith.parentheorem.ParenTheorem"
 		]
 	},
 	"mixins": [
-		"myfirstmod.mixins.json"
+		"parentheorem.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
