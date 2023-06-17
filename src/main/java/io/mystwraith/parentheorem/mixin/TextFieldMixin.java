@@ -1,11 +1,11 @@
-package io.mystwraith.myfirstmod.mixin;
+package io.mystwraith.parentheorem.mixin;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import io.mystwraith.myfirstmod.event.TextFieldWidgetCallback;
+import io.mystwraith.parentheorem.event.TextFieldWidgetCallback;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 
 @Mixin(TextFieldWidget.class)
