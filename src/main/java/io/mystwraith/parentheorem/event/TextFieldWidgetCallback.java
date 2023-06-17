@@ -1,4 +1,4 @@
-package io.mystwraith.myfirstmod.event;
+package io.mystwraith.parentheorem.event;
 
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
