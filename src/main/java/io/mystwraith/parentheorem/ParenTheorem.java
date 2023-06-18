@@ -5,7 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import io.mystwraith.parentheorem.event.TextFieldWidgetCallback;
+import io.mystwraith.parentheorem.event.TextFieldWidgetKeyPressedCallback;
+import io.mystwraith.parentheorem.event.TextFieldWidgetWriteCallback;
 
 public class ParenTheorem implements ModInitializer {
     // This logger is used to write text to the console and the log file.
@@ -21,8 +22,16 @@ public class ParenTheorem implements ModInitializer {
 
         LOGGER.info("Hello Fabric world!");
 
-        TextFieldWidgetCallback.EVENT.register((chr, modifiers) -> {
+        TextFieldWidgetKeyPressedCallback.EVENT.register((chr, modifiers) -> {
             LOGGER.info("Hi, " + Character.toString(chr) + " was pressed.");
+        });
+
+        TextFieldWidgetWriteCallback.EVENT.register((text, sText, string) -> {
+            LOGGER.info(text + ", " + sText + ", " + string);
+            if (string.equals("(")) {
+                return "(" + sText + ")";
+            }
+            return string;
         });
     }
 }

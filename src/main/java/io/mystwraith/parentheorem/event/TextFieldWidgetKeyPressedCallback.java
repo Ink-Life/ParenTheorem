@@ -3,10 +3,10 @@ package io.mystwraith.parentheorem.event;
 import net.fabricmc.fabric.api.event.Event;
 import net.fabricmc.fabric.api.event.EventFactory;
 
-public interface TextFieldWidgetCallback {
-    Event<TextFieldWidgetCallback> EVENT = EventFactory.createArrayBacked(TextFieldWidgetCallback.class, 
+public interface TextFieldWidgetKeyPressedCallback {
+    Event<TextFieldWidgetKeyPressedCallback> EVENT = EventFactory.createArrayBacked(TextFieldWidgetKeyPressedCallback.class, 
         (listeners) -> (chr, modifiers) -> {
-            for (TextFieldWidgetCallback listener : listeners) {
+            for (TextFieldWidgetKeyPressedCallback listener : listeners) {
                 listener.keyPressed(chr, modifiers);
             }
         }
