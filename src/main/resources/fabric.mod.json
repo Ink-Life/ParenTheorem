@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "parentheorem",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"name": "ParenTheorem",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
@@ -27,7 +27,5 @@
 		"java": ">=17",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
-	}
+	"suggests": {}
 }
