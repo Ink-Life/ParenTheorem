@@ -1,6 +1,5 @@
 package io.mystwraith.parentheorem;
 
-
 import net.fabricmc.api.ClientModInitializer;
 
 import org.slf4j.Logger;
