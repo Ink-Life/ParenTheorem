@@ -16,10 +16,16 @@
 	"entrypoints": {
 		"main": [
 			"io.mystwraith.parentheorem.ParenTheorem"
+		],
+		"client": [
+			"io.mystwraith.parentheorem.ParenTheoremClient"
 		]
 	},
 	"mixins": [
-		"parentheorem.mixins.json"
+		{
+			"config": "parentheorem.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
