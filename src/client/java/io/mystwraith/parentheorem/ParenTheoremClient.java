@@ -18,11 +18,10 @@ public class ParenTheoremClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         TextFieldWidgetKeyPressedCallback.EVENT.register((chr, modifiers) -> {
-            LOGGER.info("Hi, " + Character.toString(chr) + " was pressed.");
+            //LOGGER.info("Hi, " + Character.toString(chr) + " was pressed.");
         });
 
         TextFieldWidgetWriteCallback.EVENT.register((text, sText, string) -> {
-            LOGGER.info(text + ", " + sText + ", " + string);
             if (string.equals("(")) {
                 return "(" + sText + ")";
             }
